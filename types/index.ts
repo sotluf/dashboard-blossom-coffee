@@ -11,7 +11,7 @@ export interface MenuItem {
   name: string;
   price: number;
   soldToday: number;
-  category: "coffee" | "non-coffee" | "dessert" | "brunch";
+  category: "coffee" | "non-coffee" | "tea" | "dessert";
 }
 
 export interface DailySales {
