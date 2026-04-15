@@ -4,21 +4,25 @@
   --color-cafe-bg: #f0ebe3;
   --color-cafe-surface: #e8e0d5;
   --color-cafe-border: #d9d0c5;
-
   --color-cafe-brown-dark: #4a3728;
   --color-cafe-brown-mid: #7a6355;
   --color-cafe-brown-light: #9e8a78;
-
   --color-cafe-sage: #6b8f5e;
   --color-cafe-sage-mid: #a8c298;
   --color-cafe-sage-light: #d9e8d3;
+  --font-body: var(--font-sans);
+  --font-heading: var(--font-lustria);
+}
 
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Neumorphism shadows */
+:root {
+  --shadow-neu-raised: 5px 5px 10px #d9d4cc, -5px -5px 10px #ffffff;
+  --shadow-neu-badge: 3px 3px 6px #d9d4cc, -3px -3px 6px #ffffff;
+  --shadow-neu-navbar: 0 4px 10px #d9d4cc, 0 -2px 6px #ffffff;
 }
 
 body {
   background-color: var(--color-cafe-bg);
   color: var(--color-cafe-brown-dark);
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
 }
