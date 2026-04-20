@@ -30,5 +30,5 @@ export interface KpiCardProps {
   label: string;
   value: string;
   delta?: string;
-  accent?: boolean;
+  deltaLabel?: string; 
 }

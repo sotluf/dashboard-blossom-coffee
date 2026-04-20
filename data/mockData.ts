@@ -326,3 +326,9 @@ export const todayStats = {
   ).toFixed(2),
   topItem: menuItems.reduce((a, b) => (a.soldToday > b.soldToday ? a : b)),
 };
+
+// Function to calculate percentage change
+export function calcDelta(today: number, yesterday: number): string {
+  const diff = ((today - yesterday) / yesterday) * 100;
+  return diff.toFixed(1);
+}
