@@ -1,3 +1,5 @@
+import RevenueChart from "../charts/RevenueChart";
+
 interface SectionCardProps {
   title: string;
   children: React.ReactNode;
@@ -19,9 +21,9 @@ export function SectionCard({ title, children }: SectionCardProps) {
 
 export default function Sections() {
   return (
-    <>
+    <div className="grid grid-cols-2 gap-4">
       <SectionCard title="Weekly revenue">
-        <div />
+        <RevenueChart />
       </SectionCard>
       <SectionCard title="Top drinks">
         <div />
@@ -32,6 +34,6 @@ export default function Sections() {
       <SectionCard title="Recent orders">
         <div />
       </SectionCard>
-    </>
+    </div>
   );
 }
