@@ -1,4 +1,5 @@
 import RevenueChart from "../charts/RevenueChart";
+import TopDrinkChart from "../charts/TopDrinkChart";
 
 interface SectionCardProps {
   title: string;
@@ -26,7 +27,7 @@ export default function Sections() {
         <RevenueChart />
       </SectionCard>
       <SectionCard title="Top drinks">
-        <div />
+        <TopDrinkChart />
       </SectionCard>
       <SectionCard title="Busy hours">
         <div />
