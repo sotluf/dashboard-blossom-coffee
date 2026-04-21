@@ -1,6 +1,7 @@
 "use client";
 
 import { orders } from "@/data/mockData";
+import { timeAgo } from "@/lib/utils";
 
 const recentOrders = orders.reverse();
 
@@ -31,7 +32,7 @@ export default function OrdersTable() {
                 <p className="text-sm text-cafe-brown-dark font-medium">
                   {order.items.join(", ")}
                 </p>
-                <p className="text-xs text-cafe-brown-light">{order.time}</p>
+                <p className="text-xs text-cafe-brown-light">{timeAgo(order.time)}</p>
               </td>
               <td className="py-2 text-right text-sm text-cafe-sage font-medium">
                 € {order.totalAmount.toFixed(2)}
