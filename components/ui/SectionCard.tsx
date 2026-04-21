@@ -1,3 +1,4 @@
+import HourlyChart from "../charts/HourlyChart";
 import RevenueChart from "../charts/RevenueChart";
 import TopDrinkChart from "../charts/TopDrinkChart";
 
@@ -30,7 +31,7 @@ export default function Sections() {
         <TopDrinkChart />
       </SectionCard>
       <SectionCard title="Busy hours">
-        <div />
+        <HourlyChart />
       </SectionCard>
       <SectionCard title="Recent orders">
         <div />
