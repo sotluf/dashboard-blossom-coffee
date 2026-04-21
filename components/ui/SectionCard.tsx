@@ -1,6 +1,7 @@
 import HourlyChart from "../charts/HourlyChart";
 import RevenueChart from "../charts/RevenueChart";
 import TopDrinkChart from "../charts/TopDrinkChart";
+import OrdersTable from "../dashboard/OrdersTable";
 
 interface SectionCardProps {
   title: string;
@@ -34,7 +35,7 @@ export default function Sections() {
         <HourlyChart />
       </SectionCard>
       <SectionCard title="Recent orders">
-        <div />
+        <OrdersTable />
       </SectionCard>
     </div>
   );

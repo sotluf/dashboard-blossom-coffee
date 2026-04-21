@@ -158,7 +158,7 @@ export const orders: Order[] = [
     id: "o7",
     items: ["Vanilla latte"],
     totalAmount: 5.2,
-    status: "done",
+    status: "cancelled",
     time: "10:39",
   },
   {
@@ -179,7 +179,7 @@ export const orders: Order[] = [
     id: "o10",
     items: ["Oat flat white"],
     totalAmount: 5.8,
-    status: "done",
+    status: "cancelled",
     time: "10:58",
   },
   {
@@ -228,7 +228,7 @@ export const orders: Order[] = [
     id: "o17",
     items: ["Roasted tea latte"],
     totalAmount: 5.5,
-    status: "preparing",
+    status: "cancelled",
     time: "11:38",
   },
   {
